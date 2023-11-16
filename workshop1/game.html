@@ -31,7 +31,7 @@
         </nav>
     </header>
     <main>
-    
+        
         <section id="notebook">
             <div id="notebook-page">
                 
@@ -40,23 +40,22 @@
                     <tr>
                         <td><img src="icons/variable.svg" alt="" /></td>
                         <td>Variabler</td>
-                        <td id="variablesCount">0</td>
+                        <td>0</td>
                     </tr>
-                
                     <tr>
                         <td><img src="icons/array.svg" alt="" /></td>
                         <td>Arrayer</td>
-                        <td id="arraysCount">1</span></td>
+                        <td>1</span></td>
                     </tr>
                     <tr>
                         <td><img src="icons/loop.svg" alt="" /></td>
                         <td>Løkker</td>
-                        <td id="loopsCount">2</td>
+                        <td>2</td>
                     </tr>
                     <tr>
                         <td><img src="icons/function.svg" alt="" /></td>
                         <td>Funksjoner</td>
-                        <td id="functionsCount">1</td>
+                        <td>1</td>
                     </tr>
                 </table>
             </div>
@@ -76,48 +75,16 @@
     </main>
     <script>
         //PREPARE GAME CONFIG AND VARIABLES
-        const gameConfig = {
-            playerName: "Marius",
-            energy: 5,
-            points: 10,
-            duration: 138
-        }
-
-
-        //TODO: notebook
-        const notebook = {
-            variables: 3,
-            arrays: 2,
-            loops: 4,
-            functions: 7 
-        }
-        
+        //TODO: config
        
-        //(BONUS) TODO: function for all prints
+        //TODO: notebook
+        
 
-        function updateStaticUI (){
-                    //TODO: config
-       // document.getElementById("playerName").innerHTML = gameConfig.playerName
-        document.getElementById("energy").innerHTML = gameConfig.energy
-        document.getElementById("points").innerHTML = gameConfig.points
-        document.getElementById("duration").innerHTML = gameConfig.duration
-
-         //TODO: print playerinfo to HTML
-         document.getElementById("variablesCount").innerHTML = notebook.variables
-        document.getElementById("arraysCount").innerHTML = notebook.arrays
-        document.getElementById("loopsCount").innerHTML = notebook.loops
-        document.getElementById("functionsCount").innerHTML = notebook.functions
-
+        //TODO: print playerinfo to HTML
         
         //TODO: print notebook info to HTML
-        if (gameConfig.playerName === ""){
-            document.getElementById("playerName").innerHTML = "Waiting for player..."
-        } else {
-            document.getElementById("playerName").innerHTML = gameConfig.playerName
-        }   
-        }
-        // Kjøre funksjonen for utskrift
-        updateStaticUI()
+
+        //(BONUS) TODO: function for all prints
         
     </script>
 </body>
